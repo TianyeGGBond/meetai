@@ -17,7 +17,7 @@ export function NewMeetingDialog({ open, onOpenAction }: Props) {
             title="New Meeting"
             description="Create new meeting"
             open={open}
-            onOpenAction={onOpenAction}
+            onOpenChange={onOpenAction}
         >
             <MeetingForm
                 onSuccess={(id) => {
