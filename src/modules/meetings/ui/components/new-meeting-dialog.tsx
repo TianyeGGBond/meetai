@@ -7,24 +7,24 @@ import ResponsiveDialog from '@/components/responsive-dialog';
 
 type Props = {
     open: boolean;
-    onOpenAction: (open: boolean) => void;
+    onOpenChange: (open: boolean) => void;
 };
 
-export function NewMeetingDialog({ open, onOpenAction }: Props) {
+export function NewMeetingDialog({ open, onOpenChange }: Props) {
     const router = useRouter();
     return (
         <ResponsiveDialog
             title="New Meeting"
             description="Create new meeting"
             open={open}
-            onOpenChange={onOpenAction}
+            onOpenChange={onOpenChange}
         >
             <MeetingForm
                 onSuccess={(id) => {
-                    onOpenAction(false);
+                    onOpenChange(false);
                     router.push(`/meetings/${id}`);
                 }}
-                onCancel={() => onOpenAction(false)}
+                onCancel={() => onOpenChange(false)}
             />
         </ResponsiveDialog>
     );
