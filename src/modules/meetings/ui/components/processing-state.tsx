@@ -6,7 +6,7 @@ export function ProcessingState() {
                 title="Meeting completed"
                 description="This meeting was completed, a summary will apear soon"
                 image="/processing.svg"
-            />Add commentMore actions
+            />
         </div>
     )
 }
