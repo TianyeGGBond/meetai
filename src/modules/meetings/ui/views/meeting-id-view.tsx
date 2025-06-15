@@ -17,6 +17,7 @@ import { UpcomingState } from '../components/upcoming-state';
 import { ActiveState } from '../components/active-state';
 import { ProcessingState } from '../components/processing-state';
 import { CancelledState } from '../components/cancelled-state';
+import { CompletedState } from '../components/completed-state';
 
 
 type Props = {
@@ -36,11 +37,11 @@ export function MeetingIdView({ meetingId }: Props) {
         'The following action will remove this meeting',
     );
 
-    const isUpcoming = data.status === "upcoming";
-    const isActive = data.status === "active";
-    const isCancelled = data.status === "cancelled";
-    const isProcessing = data.status === "processing";
-    const isCompleted = data.status === "completed";
+    const isUpcoming = data.status === MeetingStatus.Upcoming;
+    const isActive = data.status === MeetingStatus.Active;
+    const isCancelled = data.status === MeetingStatus.Cancelled;
+    const isProcessing = data.status === MeetingStatus.Processing;
+    const isCompleted = data.status === MeetingStatus.Completed;
 
 
     const removeMeeting = useMutation(
@@ -83,7 +84,7 @@ export function MeetingIdView({ meetingId }: Props) {
 
                 {isActive && <ActiveState meetingId={data.id} />}
                 {isProcessing && <ProcessingState />}
-                {isCompleted && <ProcessingState />}
+                {isCompleted && <CompletedState data={data} />}
                 {isCancelled && <CancelledState />}
                 {isUpcoming && (
                     <UpcomingState

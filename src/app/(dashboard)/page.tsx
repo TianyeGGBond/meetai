@@ -17,7 +17,7 @@ const Page = async () => {
 
 
     return (
-        <HomeView />
+        redirect('/meetings')
     )
 }
 
