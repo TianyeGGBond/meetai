@@ -24,9 +24,9 @@ const firstSection = [
     { icon: VideoIcon, label: 'Meetings', href: '/meetings' },
     { icon: BotIcon, label: 'Agents', href: '/agents' },
 ];
-const secondSection = [
-    { icon: StarIcon, label: 'Upgrade', href: '/upgrade' },
-];
+// const secondSection = [
+//     { icon: StarIcon, label: 'Upgrade', href: '/upgrade' },
+// ];
 
 
 export const DashboardSidebar = () => {
@@ -65,7 +65,7 @@ export const DashboardSidebar = () => {
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
-                <SidebarGroup>
+                {/* <SidebarGroup>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {secondSection.map((item) => (
@@ -85,7 +85,7 @@ export const DashboardSidebar = () => {
                             ))}
                         </SidebarMenu>
                     </SidebarGroupContent>
-                </SidebarGroup>
+                </SidebarGroup> */}
             </SidebarContent>
             <SidebarFooter>
                 <DashboardUserButton />
