@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# MeetAI
 
-First, run the development server:
+MeetAI is an intelligent meeting assistant that combines modern video conferencing with real-time AI agents.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Introduction
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+MeetAI enhances online meetings with AI-powered capabilities. It supports real-time transcription, automatic summaries, scheduling, and personalized chat agents. Designed with modularity and type safety, it offers a seamless and secure meeting experience.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Real-time video and audio (powered by Stream Video SDK)
+* AI agents for live interaction and automated summaries
+* Live transcriptions and intelligent post-meeting reports
+* Meeting scheduling with session history and agent configuration
+* Personalized chat with custom AI agents
+* Async workflows for background logic (via Inngest)
+* Modular UI built with Shadcn UI and TailwindCSS
+* Secure authentication with Clerk and better-auth
+* End-to-end type safety with tRPC and Drizzle ORM
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+**Frontend**: Next.js 15, React 19, TypeScript, TailwindCSS, Shadcn UI
+**AI Layer**: Gemini, OpenRouter.ai, Huggingface
+**Backend**: tRPC, Drizzle ORM, PostgreSQL, Node.js
+**Streaming**: Stream SDKs for Video & Chat
+**Auth**: Clerk, better-auth
+**Async**: Inngest
+**Tools**: ESLint, Postman, VSCode, Drizzle Studio
+
+
+
