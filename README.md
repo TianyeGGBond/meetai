@@ -1,5 +1,5 @@
 
-# MeetAI
+# MeetAI — Online Meeting System
 
 MeetAI is an intelligent meeting assistant that combines modern video conferencing with real-time AI agents.
 
