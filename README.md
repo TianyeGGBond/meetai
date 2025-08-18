@@ -27,13 +27,13 @@ MeetAI enhances online meetings with AI-powered capabilities. It supports real-t
 
 ## Tech Stack
 
-**Frontend**: Next.js 15, React 19, TypeScript, TailwindCSS, Shadcn UI
-**AI Layer**: Gemini, OpenRouter.ai, Huggingface
-**Backend**: tRPC, Drizzle ORM, PostgreSQL, Node.js
-**Streaming**: Stream SDKs for Video & Chat
-**Auth**: Clerk, better-auth
-**Async**: Inngest
-**Tools**: ESLint, Postman, VSCode, Drizzle Studio
+* Frontend: Next.js 15, React 19, TypeScript, TailwindCSS, Shadcn UI
+* AI Layer: Gemini, OpenRouter.ai, Huggingface
+* Backend: tRPC, Drizzle ORM, PostgreSQL, Node.js
+* Streaming: Stream SDKs for Video & Chat
+* Auth: Clerk, better-auth
+* Async: Inngest
+* Tools: ESLint, Postman, VSCode, Drizzle Studio
 
 
 
